@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Education</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #b74b4b;
+        }
+
+        .education-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .edu-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 320px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .edu-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #b74b4b;
+        }
+
+        .edu-card h3 {
+            color: #b74b4b;
+            margin-bottom: 10px;
+        }
+
+        .edu-card p {
+            font-size: 1.2rem;
+        }
+
+        .edu-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+            border: 2px solid #b74b4b;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Education</h1>
+    <div class="education-container">
+        <div class="edu-card">
+            <h3>B.Tech in Information Technology</h3>
+            <p>Currently Studying (3rd Year, 2nd Semester)</p>
+            <p>Sasi Institute Of Technology & Engineering (2022 - 2026)</p>
+            <img src="images/btech-degree.jpg" alt="B.Tech Certificate Placeholder">
+        </div>
+        <div class="edu-card">
+            <h3>Higher Secondary</h3>
+            <p>A.K.R.G Junior College (2020 - 2022)</p>
+            <img src="images/highschool.jpg" alt="High School Certificate Placeholder">
+        </div>
+        
+        <div class="edu-card">
+            <h3>primary and secondary school</h3>
+            <p>Nirmala High School (2008 - 2020)</p>
+            <img src="images/tenth.png" alt="High School Certificate Placeholder">
+        </div>
+
+        
+
+    </div>
+</body>
+</html>

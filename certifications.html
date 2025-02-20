@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certifications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #b74b4b;
+            margin-bottom: 20px;
+        }
+
+        .certifications-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .cert-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            transition: 0.3s ease-in-out;
+        }
+
+        .cert-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #b74b4b;
+        }
+
+        .cert-card h3 {
+            font-size: 1.6rem;
+            color: #b74b4b;
+        }
+
+        .cert-card p {
+            font-size: 1.2rem;
+            margin-top: 5px;
+            color: #ccc;
+        }
+
+        .cert-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background: #b74b4b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .cert-card a:hover {
+            background: white;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .certifications-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Certifications</h1>
+    <p>Here are some of my certifications that showcase my skills and expertise.</p>
+
+    <div class="certifications-container">
+        <div class="cert-card">
+            <h3>Getting Started with MongoDB Atlas</h3>
+            <p>Issued by MongoDB University</p>
+            <a href="https://learn.mongodb.com/c/aJ3mXqOpRm2G7Xzl5sX8LA" >View Certificate</a>
+        </div>
+
+        <div class="cert-card">
+            <h3>Introduction to Cybersecurity</h3>
+            <p>Issued by Cisco</p>
+            <a href="https://www.credly.com/badges/c3051286-13b7-4647-8e3f-825ebd31753e" >View Certificate</a>
+        </div>
+
+        <div class="cert-card">
+            <h3>Getting Started with Linux Fundamentals</h3>
+            <p>Issued by Red Hat Academy</p>
+            <a href="https://rha.ole.redhat.com/rha/api/certificates/attendance/uuid/4a98e1c8-75e2-4d84-ae50-12b8f7ba140d" >View Certificate</a>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
