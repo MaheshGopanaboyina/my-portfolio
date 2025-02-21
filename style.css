@@ -225,11 +225,11 @@ span{
 }
 
 @keyframes words {
-    0% { content: "Ethical Hacker"; }
-    25% { content: "Penetration Tester"; }
-    50% { content: "Cybersecurity Expert"; }
-    75% { content: "White Hat Hacker"; }
-    100% { content: "Bug Bounty Hunter"; }
+    0% { content: "Aspiring Ethical Hacker"; }
+    25% { content: "Cybersecurity Enthusiastr"; }
+    50% { content: "Future Penetration Tester"; }
+    75% { content: "Bug Bounty Learner"; }
+    100% { content: "Learning Cyber Defense"; }
 }
 
 @media (max-width: 1000px){
