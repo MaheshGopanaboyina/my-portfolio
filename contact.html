@@ -6,6 +6,20 @@
     <title>Contact Me</title>
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default submission
+
+    // Show a success message
+    alert("Message sent successfully!");
+
+    // Redirect after a short delay
+    setTimeout(function() {
+        window.location.href = "https://maheshgopanaboyina.github.io/my-portfolio/"; // Change to your desired URL
+    }, 2000); // 2-second delay before redirect
+});
+</script>
+
     <style>
         * {
             margin: 0;
