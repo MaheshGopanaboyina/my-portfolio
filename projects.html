@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navbar Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #161616;
+            box-shadow: 0 4px 8px rgba(183, 75, 75, 0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            color: #b74b4b;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #b74b4b;
+        }
+
+        /* Projects Section */
+        h1 {
+            font-size: 3rem;
+            margin-top: 80px;
+            color: #b74b4b;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background: #161616;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(183, 75, 75, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-title {
+            font-size: 1.8rem;
+            margin-top: 10px;
+            color: #b74b4b;
+        }
+
+        .project-desc {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin: 10px 10px 0;
+            padding: 10px 20px;
+            color: white;
+            background: #b74b4b;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .project-links a:hover {
+            background: white;
+            color: #b74b4b;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <header>
+        <a href="index.html" class="logo">Mahesh</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <h1>My Projects</h1>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h2 class="project-title">Portfolio Website</h2>
+            <p class="project-desc">A personal website to showcase my skills, projects, and experience.</p>
+            <div class="project-links">
+                <a href="https://github.com/MaheshGopanaboyina/my-portfolio" target="_blank">GitHub</a>
+                <a href="https://maheshgopanaboyina.github.io/my-portfolio/#" target="_blank">Live Demo</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
