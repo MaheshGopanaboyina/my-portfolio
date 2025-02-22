@@ -21,9 +21,45 @@
             padding: 50px;
         }
 
+        /* Navbar Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #161616;
+            box-shadow: 0 4px 8px rgba(183, 75, 75, 0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            color: #b74b4b;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #b74b4b;
+        }
+
         h1 {
             font-size: 3rem;
-            margin-bottom: 20px;
+            margin-top: 80px;
             color: #b74b4b;
         }
 
@@ -68,6 +104,21 @@
     </style>
 </head>
 <body>
+
+    <!-- Navbar Section -->
+    <header>
+        <a href="index.html" class="logo">Mahesh</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html" class="active">Education</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Education Section -->
     <h1>My Education</h1>
     <div class="education-container">
         <div class="edu-card">
@@ -81,15 +132,12 @@
             <p>A.K.R.G Junior College (2020 - 2022)</p>
             <img src="images/highschool.jpg" alt="High School Certificate Placeholder">
         </div>
-        
         <div class="edu-card">
-            <h3>primary and secondary school</h3>
+            <h3>Primary and Secondary School</h3>
             <p>Nirmala High School (2008 - 2020)</p>
-            <img src="tenth.png" alt="High School Certificate Placeholder">
+            <img src="images/tenth.png" alt="High School Certificate Placeholder">
         </div>
-
-        
-
     </div>
+
 </body>
 </html>
