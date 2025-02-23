@@ -5,62 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
     <style>
+        /* Global Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
             text-decoration: none;
+            border: none;
+            outline: none;
+        }
+
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
         }
 
         body {
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
             background-color: black;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 5rem 9%;
         }
 
-        /* Navbar Styles */
+        /* Header / Navbar */
         header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 9%;
+            background-color: rgba(0, 0, 0, 0.9);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 50px;
-            background: #161616;
-            box-shadow: 0 4px 8px rgba(183, 75, 75, 0.3);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
+            z-index: 100;
         }
 
         .logo {
-            font-size: 1.8rem;
+            font-size: 3rem;
             color: #b74b4b;
-            font-weight: bold;
+            font-weight: 800;
+            cursor: pointer;
         }
 
         nav {
             display: flex;
-            gap: 20px;
         }
 
         nav a {
+            font-size: 1.8rem;
             color: white;
-            font-size: 1.2rem;
-            transition: 0.3s;
+            margin-left: 4rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
         }
 
-        nav a:hover, nav a.active {
+        nav a:hover,
+        nav a.active {
             color: #b74b4b;
+            border-bottom: 3px solid #b74b4b;
+        }
+
+        /* Menu Toggle for Mobile */
+        .menu-toggle {
+            display: none;
+            font-size: 3rem;
+            color: white;
+            cursor: pointer;
         }
 
         /* Projects Section */
         h1 {
-            font-size: 3rem;
-            margin-top: 80px;
+            font-size: 4rem;
+            margin-top: 120px; /* Adjusted for fixed navbar */
             color: #b74b4b;
         }
 
@@ -91,7 +117,7 @@
         }
 
         .project-desc {
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             margin: 10px 0;
         }
 
@@ -103,7 +129,7 @@
             background: #b74b4b;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: 1.6rem;
             transition: 0.3s;
         }
 
@@ -112,6 +138,42 @@
             color: #b74b4b;
         }
 
+        /* Responsive Design */
+        @media (max-width: 995px) {
+            body {
+                padding: 5rem 5%;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 60%;
+                background-color: rgba(0, 0, 0, 0.9);
+                border-left: 3px solid #b74b4b;
+                padding: 2rem;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav a {
+                display: block;
+                font-size: 2rem;
+                margin: 1.5rem 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -119,6 +181,7 @@
     <!-- Navbar Section -->
     <header>
         <a href="index.html" class="logo">Mahesh</a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <nav>
             <a href="index.html">Home</a>
             <a href="projects.html" class="active">Projects</a>
@@ -133,7 +196,6 @@
     <h1>My Projects</h1>
 
     <div class="projects-container">
-
         <div class="project-card">
             <h2 class="project-title">Portfolio Website</h2>
             <p class="project-desc">A personal website to showcase my skills, projects, and experience.</p>
@@ -142,8 +204,14 @@
                 <a href="https://maheshgopanaboyina.github.io/my-portfolio/#" target="_blank">Live Demo</a>
             </div>
         </div>
-
     </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 
 </body>
 </html>
